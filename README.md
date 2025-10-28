@@ -1,6 +1,7 @@
 # DevOps_Fullstack
 1️⃣ # **Clone the Repository**
 git clone https://github.com/PavanreddyK70/DevOps_FullStack.git
+
 cd DevOps_FullStack
 
 2️⃣ **Backend Setup**
