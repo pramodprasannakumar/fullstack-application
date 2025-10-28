@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,7 +15,7 @@ spec:
   spec:
     containers:
     - name: contactbackendcontainer
-      image: dockerpavank/backendapp:latest
+      image: dockerpavank/docker-backend1:latest
       ports:
       - containerPort: 8080
 ---
@@ -30,5 +29,3 @@ spec:
    app: contactbackend
   ports:
    - port: 80
-     targetPort: 8080
-...
