@@ -54,11 +54,11 @@ kubectl get svc
 
 Access your app via:
 **Frontend:**  
-👉 [http://<EC2-Public-IP>:<Frontend-NodePort>]
+👉 [http://<EC2-Public-IP>:<Frontend-NodePort>],Frontend: [http://54.221.123.45:30007](http://54.221.123.45:30007)  
 
 **Backend:**  
 👉 [http://<EC2-Public-IP>:<Backend-NodePort>]
-Frontend: [http://54.221.123.45:30007](http://54.221.123.45:30007)  
+
 
 📈 **Outcome**
 
