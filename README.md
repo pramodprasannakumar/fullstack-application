@@ -9,8 +9,11 @@ cd DevOps_FullStack
 Update RDS details in Backend/src/main/resources/application.properties:
 
 spring.datasource.url=jdbc:mysql://<RDS-ENDPOINT>:3306/contactdb
+
 spring.datasource.username=admin
+
 spring.datasource.password=<yourpassword>
+
 spring.jpa.hibernate.ddl-auto=update
 
 Build & package using Maven:
