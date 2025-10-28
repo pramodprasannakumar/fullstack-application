@@ -53,11 +53,13 @@ kubectl get pods
 kubectl get svc
 
 Access your app via:
-Frontend:
-👉 http://<EC2-Public-IP>:<Frontend-NodePort>
+## 🌐 Application Access
 
-Backend:
-👉 http://<EC2-Public-IP>:<Backend-NodePort>
+**Frontend:**  
+👉 [http://<EC2-Public-IP>:<Frontend-NodePort>](http://<EC2-Public-IP>:<Frontend-NodePort>)
+
+**Backend:**  
+👉 [http://<EC2-Public-IP>:<Backend-NodePort>](http://<EC2-Public-IP>:<Backend-NodePort>)
 
 📈 **Outcome**
 
