@@ -9,7 +9,7 @@ import { Contact } from './contact';
 export class ContactService {
 
   // ✅ Use NodePort + no extra /contact suffix
-  private baseUrl = "http://52.23.187.175:32287";
+  private baseUrl = "http://52.23.187.175:31062";
 
   constructor(private httpClient: HttpClient) { }
 
