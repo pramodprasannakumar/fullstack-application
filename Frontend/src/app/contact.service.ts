@@ -8,24 +8,28 @@ import { Contact } from './contact';
 })
 export class ContactService {
 
-  private baseUrl="http://52.23.187.175:8080/contact"
+  // ✅ Use NodePort + no extra /contact suffix
+  private baseUrl = "http://52.23.187.175:32287";
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  createContact(contact:Contact):Observable<string>{
-    return this.httpClient.post(`${this.baseUrl}/contact`, contact, { responseType:"text" } );
+  createContact(contact: Contact): Observable<string> {
+    // Backend endpoint -> POST /contact
+    return this.httpClient.post(`${this.baseUrl}/contact`, contact, { responseType: "text" });
   }
 
-  getContacts():Observable<Contact[]>{
+  getContacts(): Observable<Contact[]> {
+    // Backend endpoint -> GET /contacts
     return this.httpClient.get<Contact[]>(`${this.baseUrl}/contacts`);
   }
 
-  findContactById(id:number):Observable<Contact>{
+  findContactById(id: number): Observable<Contact> {
+    // Backend endpoint -> GET /contact/{id}
     return this.httpClient.get<Contact>(`${this.baseUrl}/contact/${id}`);
   }
 
-  deleteContactByid(id:number):Observable<string>{
-    return this.httpClient.delete(`${this.baseUrl}/contact/${id}`, {responseType:"text"});
+  deleteContactByid(id: number): Observable<string> {
+    // Backend endpoint -> DELETE /contact/{id}
+    return this.httpClient.delete(`${this.baseUrl}/contact/${id}`, { responseType: "text" });
   }
-
 }
