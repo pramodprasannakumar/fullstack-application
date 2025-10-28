@@ -16,7 +16,7 @@ spec:
   spec:
     containers:
     - name: contactuicontainer
-      image: dockerpavank/contactuiapp:v1
+      image: dockerpavank/docker-frontend1:latest
 
       ports:
       - containerPort: 80
